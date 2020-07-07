@@ -11,6 +11,7 @@ namespace AttributeRoutingDemonstration.Controllers
     public class EmployeeController : Controller
     {
         [Route("All")]
+        //http://localhost:3835/RouteArea/Employee/All
         public string Index()
         {
             return "Getting all the Employees";
@@ -75,6 +76,7 @@ namespace AttributeRoutingDemonstration.Controllers
         }
 
         [Route("~/Test")]
+        //http://localhost:3835/Test
         public string TestMethod()
         {
             return "Welcome to TestMethod";
